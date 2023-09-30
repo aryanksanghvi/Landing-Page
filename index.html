@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK Cbe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+    <h1 class = "Heading">KK Enterprises</h1>
+    <div class = "list" id = "list">
+        <h3 class = "option" onclick="sv('home', 'flex');sv('aboutus','none');sv('contactus','none');sv('lvm','none')">Home</h3>
+        <h3 class = "option" onclick="sv('aboutus', 'flex');sv('home','none');sv('contactus','none');sv('lvm','none')">About Us</h3>
+        <h3 class = "option" onclick="sv('contactus', 'flex');sv('home','none');sv('aboutus','none');sv('lvm','none')">Contact Us</h3>
+        <h3 class = "option" onclick="sv('lvm', 'flex');sv('home','none');sv('aboutus','none');sv('contactus','none')">Leave a Message</h3>
+    </div>
+    <div class = "home" id = "home">
+        <img class = "Bg" src = "Images/Background.png">
+        <h1 class = "intro">Welcome to the World of Kitchenware and Houseware!</h1>
+    </div>
+    <div class = "aboutus" id = "aboutus">
+        <h2>About Us</h2>
+        <p>Welcome to KK Enterprises, your trusted partner in kitchenware and 
+            houseware solutions since 1990. We take immense pride in being the 
+            leading Super Stockists and Distributors of renowned brands in India.
+            Our journey, spanning over three decades, has been marked by a 
+            commitment to excellence, quality, and customer satisfaction.
+        </p>
+        <h2>Our History</h2>
+        <p>
+            Established in 1990, KK Enterprises embarked on a mission to bring 
+            the finest kitchenware and houseware products to homes across India. 
+            Over the years, we have nurtured strong partnerships with some of the 
+            most trusted and esteemed brands in the industry. These partnerships have 
+            allowed us to offer an extensive and diverse range of products that cater 
+            to the ever-evolving needs and preferences of our customers.
+        </p>
+        <h2>Our Commitment</h2>
+        <p>
+            At KK Enterprises, our commitment extends beyond just being a distributor. 
+            We are dedicated to delivering unparalleled service, ensuring that our 
+            customers receive the highest quality products at competitive prices. 
+            We continuously strive to stay at the forefront of the industry, offering
+             the latest innovations and trends in kitchenware and houseware.
+        </p>
+        <h2>Our Vision</h2>
+        <p>
+            Our vision is to be the preferred destination for every household's 
+            kitchenware and houseware needs. We aim to continue growing our portfolio
+             of brands and products while maintaining the trust and satisfaction of our valued customers.
+        </p>
+        <h2>Our Brands</h2>
+        <p>
+            At KK Enterprises, we are privileged to represent a portfolio of top-tier 
+            brands that have earned the trust of millions of households across the country. 
+            Our product range includes:
+        </p>
+        <div class = "brands" id = "brands">
+            <h3>All Time Plastics</h3>
+            <p>
+                Innovators in plasticware, All Time Plastics offers a 
+                wide selection of durable and functional kitchen and household essentials.
+            </p>
+            <h3>Nayasa</h3>
+            <p>
+                A name synonymous with quality, Nayasa brings you an exquisite range 
+                of stylish and practical household products.
+            </p>
+            <h3>Rena Germany</h3>
+            <p>
+                Known for its elegant and contemporary designs, 
+                Rena offers a range of premium Cutleries and Knives.
+            </p>
+            <h3>Sunpet</h3>
+            <p>
+                Sunpet provides innovative and reliable storage solutions to 
+                keep your kitchen organized and efficient in the form of pet containers.
+            </p>
+            <h3>Dublin</h3>
+            <p>
+                Dublin is your go-to brand for high-quality Flasks and Steel Water Bottles.
+            </p>
+            <h3>Steelo</h3>
+            <p>
+                Steelo offers a variety of stainless steel products that combine durability 
+                and style to meet your kitchen needs.
+            </p>
+            <h3>Luminarc</h3>
+            <p>
+                Elevate your dining experience with Luminarc's exquisite glassware and tableware.
+            </p>
+            <h3>LG & Lucky Glassware</h3>
+            <p>
+                For all your glassware requirements, LG & Lucky Glassware offers a wide range of 
+                options that blend aesthetics with functionality.
+            </p>
+        </div>
+    </div>
+    <div class = "contactus" id = "contactus">
+        <a href = "mailto:mail@kkcbe.co.in?subject = Feedback&body = Message">
+            <h2 class = "mail">Want to Write to Us?</h2>
+        </a>
+        <a href="tel:+919363113459">
+            <h2 class = "call">Want to Speak with Us?</h2>
+        </a>
+    </div>
+    <div class = "lvm" id = "lvm">
+        <h2 class = "msg">Leave us a Message & We'll respond as soon as possible!</h2>
+        <label>Name</label>
+        <input type="text" placeholder="Shaan Sharma" class="payInput" id = "input">
+        <label>Phone Number</label>
+        <input type="text" placeholder="+91 12345 67890" class="payInput" id = "input">
+        <label>E-Mail</label>
+        <input type="text" placeholder="shaan@gmail.com" class="payInput" id = "input">
+        <label>Address</label>
+        <input type="text" placeholder="43 Parrys Road" class="payInput" id = "input">
+        <label>Message</label>
+        <input type="text" placeholder="Type Msg Here" class="payInput" id = "input">
+        <br>
+        <input type = "button" class = "button2" value = "Submit!" onclick = "document.getElementById('input').value = ''">
+    </div>
+
+
+
+
+    <script src = "script.js"></script>
+</body>
+</html>
